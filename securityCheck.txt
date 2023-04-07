@@ -1,0 +1,147 @@
++==============================================================================+
+
+                               /$$$$$$            /$$
+                              /$$__  $$          | $$
+           /$$$$$$$  /$$$$$$ | $$  \__//$$$$$$  /$$$$$$   /$$   /$$
+          /$$_____/ |____  $$| $$$$   /$$__  $$|_  $$_/  | $$  | $$
+         |  $$$$$$   /$$$$$$$| $$_/  | $$$$$$$$  | $$    | $$  | $$
+          \____  $$ /$$__  $$| $$    | $$_____/  | $$ /$$| $$  | $$
+          /$$$$$$$/|  $$$$$$$| $$    |  $$$$$$$  |  $$$$/|  $$$$$$$
+         |_______/  \_______/|__/     \_______/   \___/   \____  $$
+                                                          /$$  | $$
+                                                         |  $$$$$$/
+  by pyup.io                                              \______/
+
++==============================================================================+
+
+ [1mREPORT[0m 
+
+  Safety [1mv2.3.5[0m is scanning for [1mVulnerabilities[0m[1m...[0m
+[1m  Scanning dependencies[0m in your [1mfiles:[0m
+
+  -> ./directory/requirements.txt
+
+  Using [1man API KEY[0m and the [1mPyUp Commercial database[0m
+[1m  Found and scanned 3 packages[0m
+  Timestamp [1m2023-04-07 12:30:53[0m
+[1m  8[0m[1m vulnerabilities found[0m
+[1m  0[0m[1m vulnerabilities ignored[0m
+[1m  3[0m[1m remediations recommended[0m
+
++==============================================================================+
+ [31m[1mVULNERABILITIES FOUND[0m 
++==============================================================================+
+
+[31m-> Vulnerability found in pandas version 0.25.3
+[0m[1m   Vulnerability ID: [0m54182
+[1m   Affected spec: [0m>=0,<1.0.4
+[1m   ADVISORY: [0m** DISPUTED ** pandas through 1.0.3 can unserialize and
+   execute commands from an untrusted file that is passed to the...
+[1m   Fixed versions: [0m1.0.4
+[1m   CVE-2020-13091[0m
+[1m   For more information, please visit [0mhttps://pyup.io/v/54182/52d[0m
+
+
+[31m-> Vulnerability found in numpy version 1.17.4
+[0m[1m   Vulnerability ID: [0m44717
+[1m   Affected spec: [0m<1.22.0
+[1m   ADVISORY: [0mNumpy 1.22.0 includes a fix for CVE-2021-34141: An
+   incomplete string comparison in the numpy.core component in NumPy before...
+[1m   Fixed versions: [0m1.22.0
+[1m   CVE-2021-34141[0m
+[1m   For more information, please visit [0mhttps://pyup.io/v/44717/52d[0m
+
+
+[31m-> Vulnerability found in numpy version 1.17.4
+[0m[1m   Vulnerability ID: [0m44716
+[1m   Affected spec: [0m<1.22.0
+[1m   ADVISORY: [0mNumpy 1.22.0 includes a fix for CVE-2021-41496: Buffer
+   overflow in the array_from_pyobj function of fortranobject.c, which allows...
+[1m   Fixed versions: [0m1.22.0
+[1m   CVE-2021-41496[0m
+[1m   For more information, please visit [0mhttps://pyup.io/v/44716/52d[0m
+
+
+[31m-> Vulnerability found in numpy version 1.17.4
+[0m[1m   Vulnerability ID: [0m43453
+[1m   Affected spec: [0m<1.21.0rc1
+[1m   ADVISORY: [0mNumpy 1.21.0rc1 includes a fix for CVE-2021-33430: A Buffer
+   Overflow vulnerability in the PyArray_NewFromDescr_int function of ctors.c...
+[1m   Fixed versions: [0m1.21.0
+[1m   CVE-2021-33430[0m
+[1m   For more information, please visit [0mhttps://pyup.io/v/43453/52d[0m
+
+
+[31m-> Vulnerability found in numpy version 1.17.4
+[0m[1m   Vulnerability ID: [0m44715
+[1m   Affected spec: [0m<1.22.2
+[1m   ADVISORY: [0mNumpy 1.22.2  includes a fix for CVE-2021-41495: Null
+   Pointer Dereference vulnerability exists in numpy.sort in NumPy in the...
+[1m   Fixed versions: [0m1.22.2
+[1m   CVE-2021-41495[0m
+[1m   For more information, please visit [0mhttps://pyup.io/v/44715/52d[0m
+
+
+[31m-> Vulnerability found in aiohttp version 3.6.2
+[0m[1m   Vulnerability ID: [0m39659
+[1m   Affected spec: [0m<3.7.4
+[1m   ADVISORY: [0mAiohttp 3.7.4 includes a fix for CVE-2021-21330: In aiohttp
+   before version 3.7.4 there is an open redirect vulnerability. A...
+[1m   Fixed versions: [0m3.7.4
+[1m   CVE-2021-21330[0m
+[1m   For more information, please visit [0mhttps://pyup.io/v/39659/52d[0m
+
+
+[31m-> Vulnerability found in aiohttp version 3.6.2
+[0m[1m   Vulnerability ID: [0m54318
+[1m   Affected spec: [0m>=0
+[1m   ADVISORY: [0m## WithdrawnThis advisory has been withdrawn because the
+   maintainers of aiohttp and multiple third parties disputed the validity of...
+[1m   Fixed versions: [0mNo known fix
+[1m   CVE-2022-33124[0m
+[1m   For more information, please visit [0mhttps://pyup.io/v/54318/52d[0m
+
+
+[31m-> Vulnerability found in aiohttp version 3.6.2
+[0m[1m   Vulnerability ID: [0m42692
+[1m   Affected spec: [0m<3.8.0
+[1m   ADVISORY: [0mAiohttp 3.8.0 adds validation of HTTP header keys and
+   values to prevent header injection.https://github.com/aio-...
+[1m   Fixed versions: [0m3.8.0
+[1m   PVE-2021-42692[0m
+[1m   For more information, please visit [0mhttps://pyup.io/v/42692/52d[0m
+
+ Scan was completed. 8 vulnerabilities were found. 3 remediations were 
+ recommended. 
+
++==============================================================================+
+[32m[1m   REMEDIATIONS[0m
+
+[31m[1m-> pandas version 0.25.3 was found, which has 1 vulnerability[0m
+   The closest version with no known vulnerabilities is [1m1.0.4[0m
+                                                                              
+[32m[1m   We recommend upgrading to version 1.0.4 of pandas. Other versions
+   without known vulnerabilities are: 2.0.0, 2.0.0rc1, 2.0.0rc0, 1.5.3, 1.5.2,
+   1.5.1, 1.5.0, 1.5.0rc0, 1.4.4, 1.4.3, 1.4.2, 1.4.1, 1.4.0, 1.4.0rc0, 1.3.5,
+   1.3.4, 1.3.3, 1.3.2, 1.3.1, 1.3.0, 1.2.5, 1.2.4, 1.2.3, 1.2.2, 1.2.1,
+   1.2.0, 1.1.5, 1.1.4, 1.1.3, 1.1.2, 1.1.1, 1.1.0, 1.0.5[0m
+   For more information, please visit https://pyup.io/p/pypi/pandas/52d/
+   Always check for breaking changes when upgrading packages.
+                                                                              
+[31m[1m-> numpy version 1.17.4 was found, which has 4 vulnerabilities[0m
+   The closest version with no known vulnerabilities is [1m1.22.2[0m
+                                                                              
+[32m[1m   We recommend upgrading to version 1.22.2 of numpy. Other versions
+   without known vulnerabilities are: 1.24.2, 1.24.1, 1.24.0, 1.24.0rc2,
+   1.24.0rc1, 1.23.5, 1.23.4, 1.23.3, 1.23.2, 1.23.1, 1.23.0, 1.23.0rc3,
+   1.23.0rc2, 1.23.0rc1, 1.22.4, 1.22.3[0m
+   For more information, please visit https://pyup.io/p/pypi/numpy/52d/
+   Always check for breaking changes when upgrading packages.
+                                                                              
+[31m[1m-> aiohttp version 3.6.2 was found, which has 3 vulnerabilities[0m
+                                                                              
+[33m[1m   There is no known fix for this vulnerability.[0m
+   For more information, please visit https://pyup.io/p/pypi/aiohttp/52d/
+   Always check for breaking changes when upgrading packages.
+                                                                              
++==============================================================================+[0m
